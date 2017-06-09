@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>SmashFace</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Rokkitt:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<div class="root"></div>
+	<header>
+		<h1>Smash Faces</h1>
+		<hr>
+		<p>Bienvenidas al juego de Smash Faces, tu misión es poder identificar a todas tus compañeras de case ingresando apara ello su nombre.Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente. </p>
+	</header>
+	<section class="sede">
+		<label for="sede">Elige tu sede: </label>
+		<select name="sedes" id="sedeSelected">
+			<option value="lima">Lima</option>
+			<option value="mexico">Mexico</option>
+		</select>
+		<span>Puntos: <div id="score" class="puntos"></div></span>
+	</section>
+	<section class="coders">
+		<img id="photo-coder" class="photo-coder" src="" alt="">
+		<div class="ask">
+			<label for="nombre">Ingresa su nombre:
+			</label>
+			<br>
+			<input id="name" type="text" placeholder="Nombre:">
+			<br>
+			<button class="btn btn-orange">COMPROBAR</button>
+		</div>
+		
+		
+	</section>
+
+
+	<script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/mexico.js"></script>
+	<script type="text/javascript" src="js/peru.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!--<script type="text/javascript" src="js/components/"></script>-->
+</body>
+</html>
