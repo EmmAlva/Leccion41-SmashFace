@@ -18,32 +18,29 @@ $(document).ready(function(){
 	console.log(imgRandoPer);
 	console.log(imgRandoMex);
 
-	$(".sedesLab").change(function(){
-		if($(".sedesLab").val() == "mexico"){
-			$(".photo-coder").attr("src","img/mexico/"+ imgRandoMex.image);
-		}
+	var play = $(".sedesLab").change(function(){
+			if($(".sedesLab").val() == "mexico"){
+				$(".photo-coder").attr("src","img/mexico/"+ imgRandoMex.image);
+			
+				}
 		else if($(".sedesLab").val() == "lima" || $(".sedesLab").val() == "arequipa"){
 			$(".photo-coder").attr("src","img/peru/"+imgRandoPer.image);
 		}
 		else if($(".sedesLab").val() == "chile"){
 			$(".photo-coder").parent().text("Sin datos, prueba de nuevo");
 		}
-
-	
-	$(".btn").click(function(){
-		if($("#name").val() !== imgRandoMex.name){
-			alert("try again");
-		}
-		else if ($("#name").val() !== imgRandoPer.name){
-			alert("try again");
-		};
 	});
 
+		$(".btn").click(function(){
+					if($("#name").val() == imgRandoMex.name){
+					$("#score") = $("#score").text(5);
+					$(".photo-coder").attr("src","img/mexico/"+ imgRandoMex.image);
 
-	});
+					}else{	alert("try again");}
+					});
 
 	
-
+	
 
 
 });
