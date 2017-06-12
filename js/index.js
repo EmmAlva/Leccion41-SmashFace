@@ -33,11 +33,18 @@ $(document).ready(function(){
 
 		$(".btn").click(function(){
 					if($("#name").val() == imgRandoMex.name){
-					$("#score") = $("#score").text(5);
+					$("#score").text(5);
+					setTimeout(function(){
+						const imgRandoMex = mexico[Math.floor(Math.random()*mexico.length)];
+
 					$(".photo-coder").attr("src","img/mexico/"+ imgRandoMex.image);
+					},2000);
+					
 
 					}else{	alert("try again");}
 					});
+
+
 
 	
 	
